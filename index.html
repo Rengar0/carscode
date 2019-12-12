@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>QQ飞车部分车辆代码</title>
+		<link rel="stylesheet" type="text/css" href="css/carscode.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<ul class="classfy">
+				<li data-level="s">S级赛车</li>
+				<li data-level="t3">T3机甲</li>
+				<li data-level="t2">T2机甲</li>
+				<li data-level="t1">T1机甲</li>
+			</ul>
+			<div class="cars">
+				<ul class="carsTitle">
+					<li>赛车等级</li>
+					<li>赛车名称</li>
+					<li>车辆代码</li>
+				</ul>
+				<ul class="carItem"></ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript" src="js/carscode.js"></script>
+		<script type="text/javascript">
+			
+			$(function(){
+				
+				data(s);
+				
+				$('.classfy li').click(function(){
+					
+					
+					$(".carItem").empty();
+					
+					var level = $(this).attr('data-level');
+					
+					
+					if(level == "s"){
+						// console.info('当前选中的赛车级别为：'+level+'级');
+						data(s);
+					}else if(level == "t3"){
+						data(t3)
+					}else if(level == "t2"){
+						data(t2)
+					}else if(level == "t1"){
+						data(t1)
+					}else{
+						console.info("没有找到数据！");
+					}
+					
+					// console.info('当前选中的赛车级别为：'+level+'级');
+					
+					
+				})
+			})
+			
+			
+			
+			function data(arr){
+				for(var i = 0; i < arr.length; i++){
+					$('.carItem').append(
+						"<li>" + arr[i].carLevel + "</li>"
+						+"<li>" + arr[i].itemName + "</li>"
+						+"<li>" + arr[i].itemId + "</li>"
+					)
+				}
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>

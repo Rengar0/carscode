@@ -1,0 +1,140 @@
+/*-----------------------------------reset-------------------------------------*/
+html, body {
+    position: relative;
+    height: 100%;
+}
+body,div,p,a,span,h1,h2,h3,h4,h5,h6,input,button{
+    font: 1rem "Microsoft Yahei","宋体","黑体";padding: 0;margin: 0;
+}
+body{
+	color: #777777;
+}
+ul{
+    margin: 0;padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+	text-decoration: none;color: #333;
+}
+i, em, cite {
+    font-style: normal;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.w{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.blueLinear{
+	background: -webkit-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background:    -moz-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: 	-ms-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: 	 -o-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: 		linear-gradient(to right,#0e97fd,#4ec8fe);
+}
+.blueShadow{
+	-webkit-box-shadow: 0 0 15px 0 rgba(68,192,254,.7);
+	   -moz-box-shadow: 0 0 15px 0 rgba(68,192,254,.7);
+			box-shadow: 0 0 15px 0 rgba(68,192,254,.7);
+}
+.transition{
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+		-ms-transition: all .5s;
+		 -o-transition: all .5s;
+			transition: all .5s;
+}
+@-webkit-keyframes s{
+	from{box-shadow: 0 0 0 0 rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 10rem rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-ms-keyframes s{
+	from{box-shadow: 0 0 0 0 rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 10rem rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-moz-keyframes s{
+	from{box-shadow: 0 0 0 0 rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 10rem rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-o-keyframes s{
+	from{box-shadow: 0 0 0 0 rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 10rem rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@keyframes s{
+	from{box-shadow: 0 0 0 0 rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 10rem rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+
+
+/*-----------------------------------首页html开始-------------------------------------*/
+
+.container{
+	max-width: 1440px;
+	min-width: 1250px;
+	margin: 0 auto;
+}
+.classfy{
+	display: flex;
+}
+.classfy li{
+	width: 25%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #ff008b;
+	box-sizing: border-box;
+}
+.classfy li:hover{
+	cursor: pointer;
+	background: #ff008b;
+	color: #ffffff;
+}
+.carsTitle{
+	display: flex;
+}
+.carsTitle li{
+	width: 33.33%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #ff008b;
+	color: #ffffff;
+}
+.carItem{
+	display: flex;
+	flex-wrap: wrap;
+}
+.carItem li{
+	width: 33.33%;
+	line-height: 36px;
+	text-align: center;
+}
+
+/*-----------------------------------首页html结束-------------------------------------*/
+
+
+@media only screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+		min-width: auto;
+	}
+}
+@media only screen and (max-width: 514px) {
+	
+}
+@media only screen and (max-width: 414px) {
+	
+}
+@media only screen and (max-width: 375px) {
+	
+}
+@media only screen and (max-width: 320px) {
+	
+}
