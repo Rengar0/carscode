@@ -110,6 +110,7 @@ i, em, cite {
 .carItem{
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 50px;
 }
 .carItem li{
 	width: 33.33%;
