@@ -16,7 +16,7 @@ var s = [{
 	"itemId": "102222"
 },{
 	"carLevel": "S",
-	"itemName": "终极黑域电摩",
+	"itemName": "终极黑域电魔",
 	"itemId": "101885"
 },{
 	"carLevel": "S",

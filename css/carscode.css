@@ -9,6 +9,9 @@ body,div,p,a,span,h1,h2,h3,h4,h5,h6,input,button{
 body{
 	color: #777777;
 }
+input{
+	outline: none;
+}
 ul{
     margin: 0;padding: 0;
 }
@@ -80,6 +83,46 @@ i, em, cite {
 	min-width: 1250px;
 	margin: 0 auto;
 }
+.search{
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+}
+.search input{
+	padding: 8px 12px;
+	border: 1px solid #dedede;
+	color: #dedede;
+	font-size: 16px;
+	width: 600px;
+}
+.search input:focus{
+	border: 1px solid #ff008b;
+	color: #ff008b;
+}
+.search input::-webkit-input-placeholder{
+	/* color: #dedede; */
+	color: #b9b9b9;
+}
+.search input::-ms-input-placeholder{
+	/* color: #dedede; */
+	color: #b9b9b9;
+}
+.search input::-moz-placeholder{
+	/* color: #dedede; */
+	color: #b9b9b9;
+}
+.search input::input-placeholder{
+	/* color: #dedede; */
+	color: #b9b9b9;
+}
+.search i{
+	font-size: 35px;
+	padding: 0 10px;
+	color: #dedede;
+}
+.search i:hover{
+	cursor: pointer;
+}
 .classfy{
 	display: flex;
 }
@@ -116,6 +159,24 @@ i, em, cite {
 	width: 33.33%;
 	line-height: 36px;
 	text-align: center;
+}
+
+.null{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background: #ffffff;
+	margin: -10px 0 0 -80px;
+	border: 1px solid #ff0000;
+	padding: 8px 16px;
+	color: #ff0000;
+}
+.nomatchesfound{
+	font-size: 18px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 /*-----------------------------------首页html结束-------------------------------------*/
