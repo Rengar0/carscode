@@ -51,16 +51,17 @@
 		<script type="text/javascript">
 			
 			$(function(){
+				$('.classfy li').eq(0).addClass('bgred');
 				
 				data(s);
 				
 				$('.classfy li').click(function(){
 					
-					
 					$(".carItem").empty();
 					
 					var level = $(this).attr('data-level');
 					
+					$(this).addClass('bgred').siblings().removeClass('bgred');
 					
 					if(level == "s"){
 						// console.info('当前选中的赛车级别为：'+level+'级');

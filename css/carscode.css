@@ -139,6 +139,10 @@ i, em, cite {
 	background: #ff008b;
 	color: #ffffff;
 }
+.bgred{
+	background: #ff008b;
+	color: white;
+}
 .carsTitle{
 	display: flex;
 }
