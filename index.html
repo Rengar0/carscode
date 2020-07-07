@@ -116,6 +116,12 @@
 				for(var i = 0; i < allArray.length; i++){
 					for(var j = 0; j < allArray[i].length; j++){
 						// 使用正则表达式实现类似于MySQL的模糊查询，如let reg = new RegExp('(\S*)' + values + '+(\S*)')
+						// let str = '麦凯伦牛逼！！！';
+                                                // let str2 = '麦凯牛逼！！！';
+                                                // let values = '麦凯伦';
+                                                // let reg = new RegExp('(\S*)' + values + '+(\S*)');
+                                                // console.log(reg.test(str));
+                                                // console.log(reg.test(str2));
 						if(values == allArray[i][j].carLevel || values == allArray[i][j].itemName || values == allArray[i][j].itemId){
 							console.info(allArray[i][j]);
 							$('.carItem').append(
