@@ -115,6 +115,7 @@
 			function query(values){
 				for(var i = 0; i < allArray.length; i++){
 					for(var j = 0; j < allArray[i].length; j++){
+						// 使用正则表达式实现类似于MySQL的模糊查询，如let reg = new RegExp('(\S*)' + values + '+(\S*)')
 						if(values == allArray[i][j].carLevel || values == allArray[i][j].itemName || values == allArray[i][j].itemId){
 							console.info(allArray[i][j]);
 							$('.carItem').append(
